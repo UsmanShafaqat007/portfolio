@@ -1,12 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Mail, Phone, MapPin, Send, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, MessageCircle, CheckCircle, AlertCircle } from 'lucide-react';
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
   const contactInfoRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
   
   const [formData, setFormData] = useState({
     name: '',
@@ -15,9 +19,33 @@ const Contact: React.FC = () => {
     message: '',
   });
 
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'idle' | 'loading' | 'success' | 'error';
+    message: string;
+  }>({ type: 'idle', message: '' });
+
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Simplified animations to avoid hiding content
+      // Animate header
+      if (headerRef.current) {
+        gsap.fromTo(
+          headerRef.current,
+          { y: -30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: 'top 90%',
+              toggleActions: 'play none none reverse'
+            },
+          }
+        );
+      }
+
+      // Animate contact info
       if (contactInfoRef.current) {
         gsap.fromTo(
           contactInfoRef.current,
@@ -27,6 +55,7 @@ const Contact: React.FC = () => {
             opacity: 1,
             duration: 0.8,
             ease: 'power2.out',
+            delay: 0.2,
             scrollTrigger: {
               trigger: sectionRef.current,
               start: 'top 85%',
@@ -36,6 +65,7 @@ const Contact: React.FC = () => {
         );
       }
 
+      // Animate form
       if (formRef.current) {
         gsap.fromTo(
           formRef.current,
@@ -45,7 +75,7 @@ const Contact: React.FC = () => {
             opacity: 1,
             duration: 0.8,
             ease: 'power2.out',
-            delay: 0.2,
+            delay: 0.4,
             scrollTrigger: {
               trigger: sectionRef.current,
               start: 'top 85%',
@@ -67,17 +97,64 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
+    setSubmitStatus({ type: 'loading', message: 'Sending message...' });
+
+    try {
+      const formDataToSend = new FormData();
+      
+      // Web3Forms access key (get from https://web3forms.com)
+      formDataToSend.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE');
+      
+      // Form fields
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('subject', formData.subject);
+      formDataToSend.append('message', formData.message);
+      
+      // Additional Web3Forms options
+      formDataToSend.append('redirect', 'false'); // Don't redirect
+      formDataToSend.append('from_name', 'Portfolio Contact Form');
+      formDataToSend.append('replyto', formData.email);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSend
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitStatus({ 
+          type: 'success', 
+          message: 'Message sent successfully! I\'ll get back to you soon.' 
+        });
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+        // Clear status after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus({ type: 'idle', message: '' });
+        }, 5000);
+      } else {
+        throw new Error(data.message || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus({ 
+        type: 'error', 
+        message: 'Failed to send message. Please try again or contact me directly.' 
+      });
+      // Clear error after 7 seconds
+      setTimeout(() => {
+        setSubmitStatus({ type: 'idle', message: '' });
+      }, 7000);
+    }
   };
 
   const contactInfo = [
@@ -107,12 +184,17 @@ const Contact: React.FC = () => {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/mohammad-usman-b02923165/',
     },
+    {
+      icon: <MessageCircle className="w-6 h-6" />,
+      name: 'WhatsApp',
+      url: 'https://wa.me/923224712479',
+    },
   ];
 
   return (
     <section id="contact" ref={sectionRef} className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div ref={headerRef} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Get In <span className="text-blue-600">Touch</span>
           </h2>
@@ -248,12 +330,44 @@ const Contact: React.FC = () => {
                 ></textarea>
               </div>
 
+              {/* Status Message */}
+              {submitStatus.type !== 'idle' && (
+                <div className={`mb-6 p-4 rounded-lg flex items-center gap-3 ${
+                  submitStatus.type === 'success' 
+                    ? 'bg-green-50 text-green-700 border border-green-200' 
+                    : submitStatus.type === 'error'
+                    ? 'bg-red-50 text-red-700 border border-red-200'
+                    : 'bg-blue-50 text-blue-700 border border-blue-200'
+                }`}>
+                  {submitStatus.type === 'success' && <CheckCircle className="w-5 h-5" />}
+                  {submitStatus.type === 'error' && <AlertCircle className="w-5 h-5" />}
+                  {submitStatus.type === 'loading' && (
+                    <div className="w-5 h-5 animate-spin rounded-full border-2 border-blue-600 border-t-transparent"></div>
+                  )}
+                  <span>{submitStatus.message}</span>
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                disabled={submitStatus.type === 'loading'}
+                className={`w-full font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform shadow-lg hover:shadow-xl flex items-center justify-center gap-2 ${
+                  submitStatus.type === 'loading'
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-blue-600 hover:bg-blue-700 hover:scale-105'
+                } text-white`}
               >
-                <Send className="w-5 h-5" />
-                Send Message
+                {submitStatus.type === 'loading' ? (
+                  <>
+                    <div className="w-5 h-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-5 h-5" />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           </div>

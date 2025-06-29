@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
-  ExternalLink, Brain, Database, Smartphone, Building2, Search, 
+  Brain, Database, Smartphone, Building2, Search, 
   Stethoscope, Eye, MessageSquare, Settings, Calendar, Film, Palette, 
   GraduationCap, Monitor, Video, Car, Home, Scale, ArrowLeft, Sparkles
 } from 'lucide-react';
@@ -20,6 +20,35 @@ const AllProjects: React.FC = () => {
 
   const projects = getAllProjects();
 
+  // Register ScrollTrigger
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  }, []);
+
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Infinite scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (visibleProjects >= projects.length) return;
+
+      const scrollTop = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      
+      // Load more when user scrolls to 80% of the page
+      if (scrollTop + windowHeight >= docHeight * 0.8) {
+        setVisibleProjects(prev => Math.min(prev + 3, projects.length));
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [visibleProjects, projects.length]);
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Animate header
@@ -29,46 +58,93 @@ const AllProjects: React.FC = () => {
         { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
       );
 
-      // Create floating particles effect
+      // Create enhanced floating particles effect
       const particles = document.querySelectorAll('.particle');
       particles.forEach((particle, index) => {
         gsap.to(particle, {
-          y: -30,
-          duration: 2 + Math.random() * 2,
+          y: -40 + Math.random() * 20,
+          x: Math.sin(index) * 15,
+          scale: 0.8 + Math.random() * 0.4,
+          opacity: 0.1 + Math.random() * 0.3,
+          duration: 3 + Math.random() * 2,
           repeat: -1,
           yoyo: true,
           ease: 'sine.inOut',
-          delay: index * 0.2,
+          delay: index * 0.15,
         });
       });
 
-      // Animate projects with stagger
-      gsap.fromTo(
-        projectsRef.current?.children || [],
-        { 
-          y: 100, 
-          opacity: 0, 
-          scale: 0.8,
-          rotationY: 45 
-        },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          rotationY: 0,
-          duration: 0.8,
-          stagger: 0.1,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: projectsRef.current,
-            start: 'top 80%',
-            toggleActions: 'play none none reverse'
+      // Modern Staggered Reveal animation for projects
+      if (projectsRef.current?.children) {
+        gsap.fromTo(
+          projectsRef.current.children,
+          { 
+            y: 80,
+            x: (index) => (index % 2 === 0 ? -30 : 30), // Alternating horizontal offset
+            opacity: 0,
+            scale: 0.8,
+            rotation: (index) => (index % 2 === 0 ? -5 : 5), // Subtle alternating rotation
+            filter: 'blur(10px)'
           },
-        }
-      );
+          {
+            y: 0,
+            x: 0,
+            opacity: 1,
+            scale: 1,
+            rotation: 0,
+            filter: 'blur(0px)',
+            duration: 1.2,
+            stagger: {
+              amount: 0.8,
+              from: "start",
+              ease: "power2.inOut"
+            },
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: projectsRef.current,
+              start: 'top 85%',
+              toggleActions: 'play none none none'
+            },
+          }
+        );
+      }
     }, sectionRef);
 
     return () => ctx.revert();
+  }, []);
+
+  // Animate newly loaded projects with Modern Staggered Reveal
+  useEffect(() => {
+    if (visibleProjects > 6 && projectsRef.current?.children) {
+      const ctx = gsap.context(() => {
+        const newProjects = Array.from(projectsRef.current?.children || []).slice(-3);
+        
+        gsap.fromTo(newProjects, {
+          y: 60,
+          x: (index) => (index % 2 === 0 ? -20 : 20),
+          opacity: 0,
+          scale: 0.85,
+          rotation: (index) => (index % 2 === 0 ? -3 : 3),
+          filter: 'blur(8px)'
+        }, {
+          y: 0,
+          x: 0,
+          opacity: 1,
+          scale: 1,
+          rotation: 0,
+          filter: 'blur(0px)',
+          duration: 0.9,
+          stagger: {
+            amount: 0.4,
+            from: "start",
+            ease: "power2.inOut"
+          },
+          ease: 'power3.out'
+        });
+      }, sectionRef);
+
+      return () => ctx.revert();
+    }
   }, [visibleProjects]);
 
   const getIcon = (iconName: string) => {
@@ -127,10 +203,6 @@ const AllProjects: React.FC = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setSelectedProject(null);
-  };
-
-  const loadMoreProjects = () => {
-    setVisibleProjects(prev => Math.min(prev + 6, projects.length));
   };
 
   return (
@@ -205,7 +277,7 @@ const AllProjects: React.FC = () => {
 
         {/* Projects Grid */}
         <div ref={projectsRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(0, visibleProjects).map((project, index) => (
+          {projects.slice(0, visibleProjects).map((project) => (
             <div
               key={project.id}
               className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-6 hover:rotate-1 border border-white/20 overflow-hidden"
@@ -296,24 +368,19 @@ const AllProjects: React.FC = () => {
                     <Eye size={16} />
                     View Details
                   </button>
-                  <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100 transition-all duration-300 text-sm font-medium shadow-sm hover:shadow-md">
-                    <ExternalLink size={16} />
-                  </button>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Load More Button */}
+        {/* Loading indicator when more projects are being loaded */}
         {visibleProjects < projects.length && (
           <div className="text-center mt-16">
-            <button 
-              onClick={loadMoreProjects}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-            >
-              Load More Projects ({projects.length - visibleProjects} remaining)
-            </button>
+            <div className="inline-flex items-center gap-2 text-gray-600 font-medium">
+              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+              Loading more projects...
+            </div>
           </div>
         )}
 

@@ -1,0 +1,468 @@
+# Muhammad Usman Shafaqat
+
+**Address:** Manawan Training Center, Tower Street, Lahore  
+**Email:** m.usmanshafaqat@gmail.com | **Mobile:** 03224712479
+
+## About Myself
+
+My career journey has been deeply shaped by my childhood passion for discovering new technologies, designs, and building logical solutions. From an early age, I enjoyed learning about cutting-edge development techniques and applying them to create innovative solutions, which significantly contributed to my expertise in the field.
+
+Over the past 5+ years, I have honed my skills as a full-stack developer, specializing in modern web technologies, cloud platforms, and database systems. I have extensive experience in frontend frameworks, backend architectures, API development, and database management across various technology stacks. I continually expand my skillset by embracing new tools and libraries to stay ahead of industry trends.
+
+Currently, my work involves developing AI-powered systems, including AI agents that enhance user experience through personalized interactions and automation. I specialize in building advanced AI architectures, implementing vector databases, and integrating multiple AI models for enterprise-grade applications.
+
+My recent expertise includes developing intelligent automation systems, building scalable microservices architecture, and creating high-performance applications. I have successfully architected and deployed AI solutions serving thousands of users with exceptional uptime and optimal performance standards.
+
+I'm excited about the future of AI and its potential to revolutionize industries, and I am dedicated to integrating this cutting-edge technology into the solutions I create. My focus is on building enterprise-grade AI platforms that deliver measurable business impact while maintaining scalability, security, and performance standards.
+
+## Signature Skills/Experience
+
+### Programming Languages
+- C#
+- Python
+- PHP
+- JavaScript (ES6+)
+- HTML5
+- CSS3/SCSS
+
+### Frontend Technologies
+- React.js
+- Next.js
+- Redux
+- Context API
+- Material-UI
+- Bootstrap
+- Tailwind CSS
+- jQuery
+
+### Vector Databases
+- Milvus
+- supabase- pgvector
+- pinecone, Weaviate
+
+### Frameworks
+- ASP.NET/.NET Core
+- FastAPI
+- PHP Symfony
+- Node.js
+- API Platform
+- MVC Architecture
+
+### Database Technologies
+- PostgreSQL
+- MySQL
+- MongoDB
+- SQLAlchemy ORM
+- Entity Framework
+- Dapper ORM
+
+### Authentication & Security
+- JWT Tokenization
+- OAuth
+- Okta SSO
+- bcrypt
+
+### AI/ML Technologies
+- LangChain Framework
+- OpenAI GPT
+- Anthropic Claude
+- Perplexity AI
+- Groq
+- Meta LLaMA
+- Google Gemma
+- OpenAI Whisper
+- RAG (Retrieval-Augmented Generation)
+- Vector Embeddings
+- OpenAI Assistants API
+
+### Cloud Services & APIs
+- AWS S3 (boto3)
+- AWS Chime
+- AWS SQS
+- Supabase
+- Stripe
+- Moyasar
+- Twilio (SMS/WhatsApp API)
+- SendGrid
+- Mailjet
+- Cronofy API
+- YouSign API
+- Clearbit API
+- Chargebee
+
+### Real-time & Communication
+- Socket Cluster
+- WebSocket
+- RESTful APIs
+
+### Caching & Message Queues
+- Redis
+- Celery
+
+### DevOps & Deployment
+- Docker
+- CI/CD Pipelines
+- Render.com
+- Heroku
+- Uvicorn ASGI
+- Alembic (Database Migrations)
+- ngrok
+
+### Monitoring & Error Tracking
+- Bugsnag
+
+### Web Scraping & Data Processing
+- BeautifulSoup
+- Scrapy
+
+## Career Overview
+
+### Full-Stack Developer | Bravinn Technologies, Lahore
+*August 2020 - January 2022*
+
+#### Key Responsibilities & Achievements:
+- **Architected and developed multiple cloud-based applications** serving creative professionals, utilizing JavaScript, ASP.NET Framework, Entity Framework, Node.js, and MSSQL
+- **Led full-stack development** of Animatricks, a comprehensive animation and video creation platform enabling users to create promotional content with custom scenes, audio integration, and multi-format video export capabilities
+- **Built a scalable graphic design application** (Logo Builder) with advanced shape manipulation, custom uploads, and real-time design tools, supporting hundreds of concurrent users
+- **Developed a comprehensive school management system** (Academinator) featuring a multi-module architecture, including attendance tracking, curriculum management, testing system, and administrative controls
+- **Implemented robust security frameworks,** including JWT authentication, role-based authorization, and secure API endpoints across all applications
+- **Optimized database performance** through custom stored procedures and efficient query design, reducing load times by 40%
+- **Engineered complex file processing systems** for handling large JSON files and Lottie animations using JavaScript and React.js
+- **Maintained and enhanced legacy systems** while troubleshooting critical issues and implementing new features based on user feedback
+- **Collaborated with cross-functional teams** to deliver projects on schedule and within technical specifications
+
+#### Technical Stack:
+- **Frontend:** JavaScript (ES6), React.js, HTML5, CSS3, Redux, Context API
+- **Backend:** ASP.NET Framework, ASP.NET Core, Node.js, RESTful APIs
+- **Database:** MSSQL, Entity Framework, Dapper ORM, Stored Procedures
+- **Authentication:** JWT Tokenization, Role-based Access Control
+
+#### Notable Projects:
+
+**Animatricks - Animation & Video Creation Platform**
+- **Scope:** Full-stack development of cloud-based video creation software
+- **Features:** Multi-scene animation, custom shape/image integration, audio/video clip management, real-time preview, and multi-FPS video export
+- **Impact:** Enabled non-technical users to create professional-quality promotional videos
+- **Technologies:** React.js, ASP.NET Core, Dapper, Node.js, MSSQL
+
+**Logo Builder App - Graphic Design Tool**
+- **Scope:** Cloud-based logo creation platform with advanced design capabilities
+- **Features:** Custom shape library, text manipulation, user uploads, real-time editing, export functionality
+- **Impact:** Streamlined logo creation process for small businesses and freelancers
+- **Technologies:** JavaScript, ASP.NET Framework, Entity Framework, MSSQL
+
+**Academinator - School Management System**
+- **Scope:** Comprehensive educational platform with multiple integrated modules
+- **Features:** Attendance management, lecture uploads, testing system, curriculum tracking, teacher administration
+- **Impact:** Digitized school operations and improved administrative efficiency
+- **Technologies:** ASP.NET Framework, Entity Framework, JavaScript, MSSQL
+
+**MockUp App - Design Mockup Tool**
+- **Scope:** Cloud-based application for creating product mockups
+- **Features:** Template library, customization tools, export options
+- **Technologies:** JavaScript, ASP.NET Framework, Entity Framework
+
+### FullStack Developer | Coeus Solutions, Lahore
+*February 2022 - July 2022*
+
+#### Key Responsibilities & Achievements:
+- **Developed enterprise-grade communication platform** (WorkHub) serving multiple business clients with scalable React.js frontend and PHP Symfony backend
+- **Implemented AWS Chime integration** for high-quality voice/video calling with call recording capabilities, supporting both one-to-one and group calls
+- **Built a comprehensive user management system** with real-time activity tracking, online/offline status monitoring, and availability indicators
+- **Architected real-time messaging infrastructure** using Socket Cluster for instant messaging, group channels, and live user presence tracking
+- **Integrated multiple AWS services,** including S3 for media storage, SQS for queue management, and Chime for communication features
+- **Developed a secure document signing workflow** using the YouSign API for digital document execution and sharing
+- **Implemented enterprise authentication system** with Okta integration, OTP verification via Twilio, and multi-app SSO functionality
+- **Optimized application performance** using Redis caching and efficient database queries with MySQL
+
+#### Technical Stack:
+- **Frontend:** React.js, JavaScript (ES6+), HTML5, CSS3, Redux
+- **Backend:** PHP Symfony, MySQL, Redis
+- **AWS Services:** Chime (calling), S3 (storage), SQS (queues)
+- **Real-time:** Socket Cluster for messaging and presence
+- **Integrations:** Okta (SSO), Twilio (OTP), YouSign (documents), Clearbit (domain verification), Chargebee (billing)
+
+#### Notable Projects:
+
+**WorkHub Connect - Enterprise Communication Platform**
+- **Scope:** Full-stack development of a comprehensive business communication solution
+- **Key Features Developed:**
+  - **AWS Chime Integration:** Implemented voice/video calling with call recording, supporting one-to-one and group calls with up to 50+ participants
+  - **Call Management System:** Built a call logs dashboard with detailed analytics, duration tracking, and recording playback functionality
+  - **User Activity Dashboard:** Real-time monitoring showing online/offline status, in-call indicators, and availability settings for enhanced team visibility
+  - **Real-time Messaging:** Socket Cluster-powered chat system with direct messaging and group channels, file sharing, and message history
+  - **Media Management:** S3-integrated media library allowing users to upload, share, and organize files with proper access controls
+  - **Digital Document Signing:** YouSign API integration enables secure document execution and sharing workflows
+  - **User Presence Tracking:** Live status updates and activity indicators for improved team coordination
+- **Technical Achievements:**
+  - Handled concurrent users across multiple communication channels
+  - Optimized real-time data synchronization with minimal latency
+  - Built a responsive UI handling complex state management for calls and messaging
+- **Impact:** Enabled seamless remote collaboration with enterprise-grade security and reliability
+
+**WorkHub Admin - Multi-tenant Management Platform**
+- **Scope:** Development of a centralized administration system serving as the parent application for the entire WorkHub ecosystem
+- **Key Features Developed:**
+  - **Enterprise Onboarding System:** Complete user registration workflow with email verification and OTP-based authentication via Twilio
+  - **Okta SSO Integration:** Social login implementation supporting multiple identity providers with seamless single sign-on across all WorkHub applications
+  - **SQS Queue Management:** Automated user provisioning system using AWS SQS for reliable cross-application user creation and synchronization
+  - **Company Management Portal:** Multi-tenant architecture supporting company creation, domain verification via Clearbit API, and custom branding
+  - **User & Company Administration:** Comprehensive dashboard for managing users, permissions, company settings, and access controls
+  - **Billing Integration:** Chargebee integration for subscription management, billing, and payment processing
+  - **Domain Management:** Custom domain setup and verification system for white-label deployments
+- **Technical Achievements:**
+  - Built a scalable multi-tenant architecture supporting hundreds of companies
+  - Implemented secure authentication flow with multiple verification methods
+  - Created an efficient queue-based system for cross-application data synchronization
+- **Impact:** Streamlined enterprise onboarding and reduced setup time
+
+**WorkHub Scheduling - Multi-Calendar Management System**
+- **Scope:** Development of an intelligent meeting scheduling and calendar synchronization platform
+- **Key Features Developed:**
+  - **Multi-Calendar Integration:** Seamless synchronization with multiple calendar providers (Google Calendar, Outlook, Exchange) via the Cronofy API
+  - **Smart Meeting Scheduling:** Intelligent conflict detection and resolution with automated meeting booking across different time zones
+  - **Interactive Calendar UI:** Responsive calendar interface with drag-and-drop functionality for easy meeting management
+  - **Automated Notifications:** Meeting reminders and updates sent via integrated notification system
+  - **Agenda Management:** Comprehensive agenda viewer with meeting details, participant lists, and document attachments
+  - **Time Zone Handling:** Global time zone support for distributed teams with automatic conversion
+  - **Meeting Analytics:** Detailed reporting on meeting patterns, duration, and participant engagement
+- **Technical Achievements:**
+  - Complex API integration handling multiple calendar providers with different data formats
+  - Real-time calendar synchronization ensures data consistency across platforms
+  - Advanced date/time manipulation algorithms for conflict resolution
+  - Efficient caching strategy using Redis for improved performance
+- **Impact:** Eliminated back-and-forth email coordination for meeting setup
+
+#### Technical Challenges Overcome:
+- **Real-time Scalability:** Optimized Socket Cluster implementation to handle thousands of concurrent connections
+- **AWS Integration:** Successfully integrated multiple AWS services, ensuring reliable communication and media handling
+- **Multi-tenant Architecture:** Built secure, isolated environments for different companies within a single platform
+- **Cross-platform Authentication:** Implemented seamless SSO across multiple applications with various identity providers
+
+#### Professional Growth:
+- **Mastered enterprise-grade integrations** with AWS, Okta, and third-party services
+- **Gained expertise in real-time communication systems** and WebRTC technologies
+- **Enhanced skills in multi-tenant SaaS architecture** and scalable system design
+- **Developed proficiency in queue-based systems** and asynchronous processing
+- **Strengthened API integration abilities** working with complex enterprise services
+
+### Full-Stack Developer | WorkHub, Lahore
+*July 2022 - Present*
+
+#### Key Responsibilities & Achievements:
+- **Architected and developed WorkBot**, an enterprise-grade AI-powered knowledge management platform transforming organizational documents into intelligent chatbots using RAG technology
+- **Led full-stack development** of a comprehensive AI assistant ecosystem serving enterprise companies with multi-modal document processing capabilities
+- **Built Dubai Real Estate Platform (DREP)**, a comprehensive AI-powered real estate management system serving Dubai's property market with intelligent automation
+- **Developed MemoMind**, an intelligent WhatsApp-based personal memory assistant leveraging AI for seamless information storage and retrieval through natural conversation
+- **Created Competitor Search API**, a sophisticated AI-powered competitor analysis platform delivering comprehensive market intelligence and strategic insights for businesses
+- **Implemented sophisticated multi-model AI integration** supporting OpenAI GPT, Anthropic Claude, Perplexity AI, and Groq with dynamic model selection and cost optimization
+- **Built a scalable microservices architecture** using FastAPI and Python, handling concurrent processing of thousands of documents with 99.9% uptime
+- **Designed vector database systems** using Milvus and PostgreSQL with pgvector for semantic search and intelligent document retrieval with sub-second query response times
+- **Developed a comprehensive DevOps pipeline** with Docker containerization, CI/CD automation, and multi-environment deployment on Render.com
+- **Maintained and enhanced legacy applications** from the Coeus Solutions acquisition, migrating Connect and Scheduling apps to a modern React/Material-UI stack
+- **Optimized performance and costs** through intelligent caching and query optimization strategies
+
+#### Technical Stack:
+- **Backend:** FastAPI, Python, PHP Symfony, SQLAlchemy ORM, PostgreSQL (with pgvector), MySQL
+- **AI/ML:** LangChain Framework, OpenAI GPT, Anthropic Claude, Perplexity AI, Groq, RAG Architecture, Vector Embeddings
+- **Vector Databases:** Milvus, PostgreSQL pgvector for semantic search and embeddings
+- **Document Processing:** PyMuPDF, PyPDF2, pdf2image, Tesseract OCR (English, Arabic, German), python-magic, OpenAI Whisper, BeautifulSoup
+- **Frontend:** React.js, Material-UI, Redux, Socket Cluster, WebSocket
+- **Caching & Queues:** Redis (multi-layer caching), Celery (background processing)
+- **Cloud Services:** AWS S3 (boto3), Supabase, Render.com deployment, Heroku, Stripe payment processing
+- **Communication:** SendGrid, Mailjet, SMTP, WebSocket, real-time messaging, Twilio, WhatsApp API
+- **DevOps:** Docker, CI/CD Pipelines, Bugsnag monitoring, Alembic migrations, Uvicorn ASGI
+
+#### Notable Projects:
+
+**WorkBot - Enterprise AI Knowledge Management Platform**
+- **Scope:** Full-stack development of RAG-powered AI system converting static documents into interactive chatbots
+- **Key Features Developed:**
+  - **Multi-Model AI Integration:** Dynamic switching between OpenAI GPT, Anthropic Claude, and Groq models based on query complexity and cost optimization
+  - **Advanced RAG System:** Custom retrieval-augmented generation providing factual, source-backed answers from company knowledge bases
+  - **Multi-Modal Document Processing:** Support for PDFs, Excel files, images, and scanned documents with OCR capabilities in multiple languages
+  - **Vector Database Implementation:** Milvus integration handling millions of document embeddings with semantic search capabilities
+  - **Context-Aware Chatbot:** Advanced conversation management with chat history, threading, and context preservation
+  - **Voice & Web Agents:** AI-powered voice interaction system with feedback collection and web-based assistant deployment
+  - **Source Citation System:** Automated source tracking and citation for answer transparency and verification
+  - **Real-time Streaming:** Response streaming implementation for enhanced user experience and reduced latency
+- **Technical Achievements:**
+  - Built multi-tenant architecture with complete data isolation between companies
+  - Implemented JWT-based authentication with role-based access control
+  - Created a sophisticated multi-layer Redis caching strategy, significantly reducing API costs
+  - Developed scalable background processing with Celery and Redis message broker
+  - Achieved high query accuracy with fast response times
+- **Impact:** Enabled instant access to company knowledge bases, significantly reducing research time and handling thousands of daily queries
+
+**Dubai Real Estate Platform (DREP) - AI-Powered Property Management System**
+- **Scope:** End-to-end development of a comprehensive real estate management platform serving Dubai's property market with intelligent automation and AI integration
+- **Key Features Developed:**
+  - **AI-Powered Property Management:** Intelligent property categorization, automated description generation, and semantic search using OpenAI embeddings with PostgreSQL pgvector
+  - **Advanced Lead Management System:** Multi-source lead capture with automated scoring, qualification, and intelligent assignment to brokers with improved conversion rates
+  - **AI-Driven PDF Processing:** Anthropic Claude integration for automated project creation from property brochures, significantly reducing manual data entry
+  - **Real-time Communication Hub:** WebSocket-based messaging system with AI chatbot for property inquiries and lead qualification
+  - **Multi-Tier Role Management:** Six-level user hierarchy (Super Admin to User) with commission-based categorization and team management
+  - **Financial Management Suite:** Automated commission calculation, multi-currency payment processing, invoice generation, and audit trail
+  - **Vector-Based Property Matching:** Semantic similarity search for intelligent property recommendations using embeddings and vector operations
+  - **Contract & LOI System:** Digital Letter of Intent processing, automated contract generation, and document lifecycle management
+  - **Marketing Campaign Automation:** Email campaign management with SendGrid/Mailjet integration and performance analytics
+- **Technical Achievements:**
+  - Implemented FastAPI with async SQLAlchemy for high-performance database operations
+  - Built a scalable file processing system with AWS S3 integration and signed URLs for secure media access
+  - Created a comprehensive RBAC system with JWT authentication and bcrypt password security
+  - Developed AI-powered duplicate detection and contact preference management
+  - Integrated multiple email service providers with fallback mechanisms for reliable communication
+  - Built a real-time analytics dashboard with property view tracking and user activity monitoring
+- **Impact:** Streamlined Dubai real estate operations, substantially reduced manual processing, improved lead conversion rates, and enabled efficient real-time property discovery for users
+
+**Competitor Search API - AI-Powered Market Intelligence Platform**
+- **Scope:** Full-stack development of sophisticated competitor analysis and market intelligence REST API platform leveraging AI for comprehensive business insights
+- **Key Features Developed:**
+  - **AI-Powered Competitor Discovery:** Perplexity API integration for intelligent competitor identification and comprehensive market analysis
+  - **Multi-Dimensional Analysis Engine:** Advanced analytics including SWOT analysis, market positioning, sentiment analysis, and pricing strategy evaluation
+  - **Strategic Intelligence Tools:** AI-generated sales pitch creation, competitor monitoring systems, and strategic roadmap planning capabilities
+  - **Token-Based Usage System:** Comprehensive credit management with Stripe payment integration and flexible pricing tiers for different analysis types
+  - **Comprehensive Database Architecture:** PostgreSQL with SQLAlchemy ORM managing users, competitors, products, analyses, and subscription data
+  - **Authentication & Security:** JWT-based token authentication with email verification, password reset, and role-based access control
+  - **Web Scraping Integration:** BeautifulSoup implementation for website analysis and competitor data extraction
+  - **Historical Analytics:** Analysis tracking system enabling longitudinal competitive intelligence and trend monitoring
+  - **Demo Request System:** Enterprise-grade demo management with diamond currency for premium features
+  - **Custom Question Analysis:** Natural language query system allowing users to ask specific questions about competitors
+- **Technical Achievements:**
+  - Built a scalable FastAPI architecture with async capabilities, handling concurrent analysis requests
+  - Implemented a comprehensive audit trail system tracking all user actions and token transactions
+  - Created a sophisticated pricing model with different token costs per analysis type (30 tokens for search, 20 for monitoring, 10 for custom questions)
+  - Developed secure payment processing with Stripe webhooks for automatic token allocation
+  - Integrated multiple email service providers (Mailjet) for transactional communications
+  - Built comprehensive API documentation with OpenAPI/Swagger and ReDoc
+  - Implemented database migrations with Alembic for schema versioning and updates
+  - Created a structured logging system for monitoring and debugging across application layers
+- **Impact:** Transformed competitive intelligence workflows for businesses, enabling automated competitor discovery and analysis in minutes rather than days, serving startups, product managers, and sales teams with actionable market insights
+
+**MemoMind - WhatsApp Personal Memory Assistant**
+- **Scope:** End-to-end development of an intelligent WhatsApp-based personal knowledge management system transforming natural conversation into semantic memory storage and retrieval
+- **Key Features Developed:**
+  - **AI-Powered Message Classification:** Intelligent determination of storage vs. query intents using OpenAI GPT models with multi-step analysis and context consideration
+  - **Semantic Memory System:** Advanced vector storage using the Milvus database with OpenAI embeddings for meaning-based information retrieval
+  - **WhatsApp Integration:** Complete Twilio API integration for a native messaging experience with webhook handling and message delivery tracking
+  - **Voice Processing Capabilities:** OpenAI Whisper integration for voice message transcription and natural speech-to-text conversion
+  - **Context-Aware Conversations:** Intelligent conversation history management with follow-up question handling and contextual response generation
+  - **Subscription Management System:** Comprehensive Stripe integration with trial periods, recurring billing, and subscription lifecycle management
+  - **User Data Isolation:** Partition-based vector database architecture ensuring complete privacy and data separation between users
+  - **Smart Response Generation:** AI-powered summarization with conversation context and automatic message chunking for WhatsApp limits
+  - **Caching Strategy:** Redis-based performance optimization with configurable expiry and efficient data retrieval
+- **Technical Achievements:**
+  - Implemented sophisticated prompt engineering for accurate intent classification and contextual response generation
+  - Built scalable vector database architecture with IVF_FLAT indexing and L2 distance similarity search
+  - Created a comprehensive webhook validation system with cryptographic signature verification for security
+  - Developed an asynchronous processing pipeline handling concurrent message processing and AI model interactions
+  - Integrated multiple OpenAI models (GPT-4o-mini, GPT-o1, Whisper-1) with intelligent model selection based on task requirements
+  - Built a robust subscription system with Stripe webhooks, managing trial periods, billing cycles, and access control
+  - Implemented repository pattern with Supabase integration for scalable data management and user lifecycle tracking
+- **Impact:** Transformed personal information management by enabling natural conversation-based knowledge storage, eliminating information silos, and providing instant semantic search capabilities for users
+
+**API Edrak - Legal AI Research Platform**
+- **Scope:** Full-stack development of a specialized AI-powered legal research and advisory platform for legal professionals
+- **Key Features Developed:**
+  - **Multi-Model Legal AI Integration:** Comprehensive LLM support including GPT-4o, GPT-4, O1-preview, Claude 3 Opus, Meta LLaMA 3, and Google Gemma2 for legal analysis
+  - **Court Verdict Analysis Engine:** Specialized processing of judicial decisions, court verdicts, and legal case files with automated precedent extraction
+  - **Legal Document Intelligence:** Advanced document processing for PDFs, HTML legal texts, and scanned court papers using OCR and specialized legal content extraction
+  - **OpenAI Assistants API Integration:** Thread-based conversation management for persistent legal consultations and complex case analysis
+  - **Legal Web Crawling System:** Scrapy-based recursive crawling of legal databases, court websites, and case law repositories with domain-restricted access
+  - **Semantic Legal Search:** A Vector embedding system for intelligent legal document search and precedent discovery
+  - **Legal Research Automation:** Natural language query system against legal document repositories with source attribution
+  - **Subscription & Billing System:** Moyasar payment integration with token-based usage tracking and flexible subscription tiers for law firms
+  - **Legal Document Classification:** Automated categorization and metadata extraction for legal content types
+- **Technical Achievements:**
+  - Implemented specialized legal document processing pipeline with intelligent text extraction optimized for legal terminology
+  - Built a duplicate prevention system using SHA256 hashing for legal content processing
+  - Created secure file management with encrypted storage and signed URL generation for sensitive legal documents
+  - Developed a comprehensive audit trail system for legal document access and modifications
+  - Integrated multiple AI models with custom prompt engineering specifically tuned for legal analysis
+- **Impact:** Transformed legal research workflows, enabling instant access to case law and precedents, significantly reducing legal research time for law firms
+
+**Legacy Application Modernization - Connect & Scheduling**
+- **Scope:** Complete UI migration and feature enhancement of the existing WorkHub ecosystem applications
+- **Key Features Enhanced:**
+  - **WorkHub Connect:** Maintained AWS Chime integration, Socket Cluster messaging, user management, and S3 media storage
+  - **WorkHub Scheduling:** Preserved Cronofy API integration, multi-calendar sync, and meeting management functionality
+  - **Modern UI Implementation:** Complete redesign using React, Material-UI, following Figma specifications
+  - **Responsive Design:** Mobile-first approach with improved accessibility and cross-device compatibility
+  - **Performance Optimization:** Substantially faster load times through code splitting and efficient state management
+- **Technical Achievements:**
+  - Seamless migration from legacy framework to modern React stack
+  - Maintained all existing integrations (AWS services, third-party APIs, Socket Cluster)
+  - Improved code maintainability and development velocity
+  - Enhanced user experience with modern design patterns
+- **Impact:** Significantly improved user adoption and reduced customer support tickets
+
+#### DevOps & Infrastructure Achievements:
+- **Containerization:** Docker multi-stage builds with optimized image sizes and security scanning
+- **CI/CD Pipeline:** Automated deployment with testing, security checks, and multi-environment deployment
+- **Cloud Architecture:** Multi-instance deployment with load balancing and auto-scaling on Render.com
+- **Monitoring & Reliability:** Integrated Bugsnag error tracking, health monitoring, and automated alerting systems
+- **Database Management:** PostgreSQL optimization with connection pooling, pgvector extensions, and Alembic schema versioning
+- **Security Implementation:** CORS protection, encrypted database connections, secure API key management, and JWT-based authentication
+
+#### AI/ML Technical Challenges Overcome:
+- **RAG Optimization:** Fine-tuned retrieval accuracy balancing relevance and computational efficiency across multiple platforms
+- **Multi-Language Processing:** Implemented OCR with Tesseract, supporting English, Arabic, and German documents
+- **Cost Management:** Developed an intelligent model selection, reducing AI processing costs while maintaining quality
+- **Scalability:** Built distributed processing systems handling concurrent document ingestion and query processing
+- **Data Privacy:** Ensured complete tenant isolation and secure handling of sensitive enterprise and legal documents
+- **Vector Search Optimization:** Implemented efficient similarity search algorithms with pgvector and Milvus for sub-second response times
+- **Market Intelligence Processing:** Developed sophisticated competitor analysis algorithms using Perplexity API for real-time market insights
+
+#### Professional Growth:
+- **AI/ML Expertise:** Mastered modern AI application development with LangChain, vector databases, and multi-model integration
+- **Technical Leadership:** Led architecture decisions and mentored team members on AI integration best practices
+- **DevOps Proficiency:** Advanced skills in containerization, CI/CD, and cloud deployment strategies
+- **Enterprise Development:** Experience building scalable, multi-tenant SaaS platforms for enterprise clients and specialized industries
+- **Innovation Leadership:** Pioneered AI adoption within the company, establishing standards for RAG implementations and semantic search systems
+- **Full-Stack Mastery:** Comprehensive expertise in modern web technologies, from FastAPI backends to React frontends with real-time capabilities
+- **Business Intelligence:** Developed expertise in competitive analysis, market intelligence, and strategic planning through AI-powered platforms
+
+## Personal Projects
+
+### KAMLINK - Healthcare Management Platform
+- **Technologies:** Node.js, Express.js, PostgreSQL, Sequelize ORM, Socket.IO, React.js, JWT Authentication, Docker
+- **Features:** 
+  - **Comprehensive Healthcare Management:** Multi-organization support with facility management, medical staff coordination, and patient care tracking
+  - **Real-time Communication:** WebSocket-based notifications and live updates across healthcare facilities
+  - **Financial Operations:** Expense tracking, insurance management, payment processing with Stripe integration
+  - **Role-based Access Control:** Hierarchical user management (CEO, Corporate, Manager, Facility users) with granular permissions
+  - **Patient Care Workflow:** Complete intake management, discharge planning, census tracking, and AMA processing
+  - **Business Intelligence:** Market intelligence, performance analytics, and comprehensive reporting
+  - **Contract Management:** Service agreements, admission criteria, and compliance tracking
+- **Impact:** Unified healthcare management platform addressing fragmented systems, manual processes, and coordination challenges in healthcare organizations
+- **Architecture:** Multi-layered architecture with Repository pattern, Service layer, and comprehensive API design
+
+### Screen Recording Chrome Extension
+- **Technologies:** JavaScript, Chrome Extension APIs, WebRTC
+- **Features:** Multi-source recording capabilities (screen, microphone, camera), real-time media processing, and user-friendly interface
+- **Impact:** Streamlined content creation workflow with seamless recording functionality
+
+### Car Booking Management Platform
+- **Technologies:** Full-stack web application with responsive dashboard
+- **Features:** Multi-category vehicle selection, dynamic pricing system, advanced filtering options, dual-interface design (admin/user), booking management system
+- **Impact:** Comprehensive solution for automotive rental services with role-based access control
+
+### Property Management & Auction System
+- **Technologies:** Full-stack web application with real-time capabilities
+- **Features:** Property listing management, auction functionality, category-based filtering, price range selection, dual-role interface (admin/user), bidding system
+- **Impact:** Complete real estate management solution with automated auction processes
+
+### Additional Development Initiatives
+- **Prototype Applications:** Multiple proof-of-concept projects exploring emerging technologies and innovative user interfaces
+- **Open Source Contributions:** Active participation in the developer community through code contributions and technical discussions
+- **Continuous Learning Projects:** Regular development of small-scale applications to experiment with new frameworks and technologies
+
+## Personal Skills
+- Research & Development
+- Highly organized and efficient
+- Ability to work independently or as part of a team
+- Able to work under pressure
+- Problem-solving and fast Learning
+
+## Education
+**2019:** University of Gujrat, Lahore Campus, Pakistan; BSCS (HONS)

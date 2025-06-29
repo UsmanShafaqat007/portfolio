@@ -102,25 +102,24 @@ const Contact: React.FC = () => {
     setSubmitStatus({ type: 'loading', message: 'Sending message...' });
 
     try {
-      const formDataToSend = new FormData();
-      
-      // Web3Forms access key (get from https://web3forms.com)
-      formDataToSend.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE');
-      
-      // Form fields
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('subject', formData.subject);
-      formDataToSend.append('message', formData.message);
-      
-      // Additional Web3Forms options
-      formDataToSend.append('redirect', 'false'); // Don't redirect
-      formDataToSend.append('from_name', 'Portfolio Contact Form');
-      formDataToSend.append('replyto', formData.email);
+      const payload = {
+        access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE',
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        redirect: 'false',
+        from_name: 'Portfolio Contact Form',
+        replyto: formData.email
+      };
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formDataToSend
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify(payload)
       });
 
       const data = await response.json();
